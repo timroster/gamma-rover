@@ -1,4 +1,4 @@
-# gamma-rover
+# Gamma Rover
 SpaceApps Challenge 2015 by Tim and Eric
 ## Abstract
 Long term space exploration carries many risks including exposure to harmful ionizing radiation. This project uses SPHERES platform robots to improve mobile detection of health threats from gamma radiation in large spacecraft or space stations. Gamma ray sensors can detect damage to shielding from space debris impacts and provide pinpoint location information to target repair efforts.
