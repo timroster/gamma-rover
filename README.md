@@ -19,3 +19,5 @@ For the project, we have slightly modified the mqttPublisher.c file from the [io
 ## Use of IBM Bluemix
 The Internet of Things boilerplate was used to support the Node-RED envrionment. To this a service instance of Internet of Things was added to create the organization used for registered device (raspberry pi) enrollment. View of the Bluemix dashboard:
 ![bluemix dashboard](https://dl.dropboxusercontent.com/u/52328656/hackathons/gamma-rover-Bluemix-dashboard.png)
+
+Youtube Video demo: https://youtu.be/rnF_9mrPQyY
