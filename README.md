@@ -1,2 +1,15 @@
 # gamma-rover
 SpaceApps Challenge 2015 by Tim and Eric
+## Abstract
+Long term space exploration carries many risks including exposure to harmful ionizing radiation. This project uses SPHERES platform robots to improve mobile detection of health threats from gamma radiation in large spacecraft or space stations. Gamma ray sensors can detect damage to shielding from space debris impacts and provide pinpoint location information to target repair efforts.
+
+A simulated gamma ray sensor will send readings to IBM Internet of Things Foundation running as a Bluemix service. Node-RED will be used to monitor sensor data and communicate with a Raspberry pi (registered to Internet of Things Foundation) providing light indicators for movement signal monitoring of the SPHERES device. When the sensor data exceeds a critical threshold, the monitor program will send a STOP signal to the SPHERES device and change the LED display color.
+
+When stopped, Node-RED will simulate handling the http request to obtain location information from the SPHERES device and record the location to a database
+
+## Background and additional project detail
+The NASA [SPHERES](http://www.nasa.gov/spheres/mission.html) program provides a small autonomous vehicle capable of navigating within a large spacecraft of space station envrionment. These vehicles are able to use ultrasound beacons to identify position within the spacecraft and can have additional attachments through an expansion port.
+[Gamma radiation](http://www.britannica.com/EBchecked/topic/225048/gamma-ray), discovered in the late 1800's is a high energy, short wavelength electromagnetic wave. Gamma rays is ionizing radiation that can cause damage to cells and organs in the body. The earth's atsmophere absorbs almost all non terrestrial gamma rays, however, a spacecraft orbiting earth or in transit for a long journey to mars does not have this type of protection. A recent project was announced to [incorporate a shield](http://www.engineering.com/Education/EducationArticles/ArticleID/7510/Orion-Spacecraft-will-carry-Radiation-Shield-designed-by-High-School-Students.aspx) for gamma rays into the Orion spacecraft. During an extended period of service, an autonomous system for locating defects and damage to the shield could be beneficial to occupants of the spacecraft. Small photo-diode based sensors have been described and developed in [other projects](http://hackaday.com/2013/06/03/a-very-tiny-gamma-ray-detector/) and we imagine attaching one of these sensors to the expansion port of the SPHERES satellite, or having it directly incorporated into future designs.
+
+## Project design and assets in this Github
+To explore how to create this type of solution using an Internet of Things framework, we are using a simulated gamma ray sensor on a mobile device. This simulated sensor creates a stream of regular data flowing into a processing system defined in Node-RED running on the IBM Bluemix platform. At most times, data from the sensor is in the nominal range and the processing system sends an all clear signal to a mobile device.
