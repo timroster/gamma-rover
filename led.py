@@ -19,7 +19,7 @@ GPIO.output(YELLOWLED, GPIO.LOW)
 GPIO.setup(GREENLED, GPIO.OUT)
 GPIO.output(GREENLED, GPIO.LOW)
 
-# expect to be invoked as color.py {red|yellow|green}
+# expect to be invoked as led.py {red|yellow|green}
 # with no arguments defaults to turning off all led
 if len(sys.argv) == 2:
         if sys.argv[1] == "red":
